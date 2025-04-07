@@ -84,12 +84,11 @@ Cada função de número possui um **desenho ASCII comentado** que facilita a vi
 ```cpp
 void mostrar0() {
   // Número 0
-  // *   *    (e0 d0)
-  // *   *    (e1 d1)
-  // *   *    (e2 d2)
-  // *   *    (e3 d3)
-  // *   *    (e4 d4)
-  // * * *    (c0     c2)
+  // * * *    (e0 c0 d0)
+  // *   *    (e1    d1)
+  // *   *    (e2    d2)
+  // *   *    (e3    d3)
+  // * * *    (e4 c2 d4)
 
   digitalWrite(led_e0, HIGH);
   digitalWrite(led_e1, HIGH);
