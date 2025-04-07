@@ -10,7 +10,7 @@ Este projeto consiste em um contador numérico de 0 a 9 utilizando **13 LEDs dis
 - 13x LEDs
 - 13x Resistores (220Ω recomendados)
 - 1x Placa Fenolite ou Protoboard
-- Fios de conexão
+- Fios de conexão (Jumpers Macho-Fêmea)
 - Fonte 5V ou alimentação USB
 
 ---
