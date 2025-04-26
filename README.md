@@ -44,14 +44,14 @@ Visual (Número 8 genérico):
 | `led_e2`  | Esquerda Meio        | D2 (GPIO4)    |
 | `led_e3`  | Esquerda Baixo       | D3 (GPIO0)    |
 | `led_e4`  | Esquerda Base        | D4 (GPIO2)    |
-| `led_d0`  | Direita Topo         | D5 (GPIO14)   |
+| `led_d0`  | Direita Topo         | 3.3V          |
 | `led_d1`  | Direita Cima         | D6 (GPIO12)   |
 | `led_d2`  | Direita Meio         | D7 (GPIO13)   |
-| `led_d3`  | Direita Baixo        | D8 (GPIO15)   |
-| `led_d4`  | Direita Base         | RX (GPIO3)    |
-| `led_c0`  | Centro Topo          | TX (GPIO1)    |
-| `led_c1`  | Centro Meio          | SD2 (GPIO9)   |
-| `led_c2`  | Centro Base          | SD3 (GPIO10)  |
+| `led_d3`  | Direita Baixo        | RX (GPIO03)   |
+| `led_d4`  | Direita Base         | 3.3V          |
+| `led_c0`  | Centro Topo          | D5 (GPI14)    |
+| `led_c1`  | Centro Meio          | D8 (GPI15)    |
+| `led_c2`  | Centro Base          | TX (GPIO01)   |
 
 ---
 
@@ -83,12 +83,13 @@ Cada função de número possui um **desenho ASCII comentado** que facilita a vi
 
 ```cpp
 void mostrar0() {
+  apagarTudo();
   // Número 0
-  // * * *    (e0 c0 d0)
-  // *   *    (e1    d1)
-  // *   *    (e2    d2)
+  // * * *    (e4 c2 3.3V)
   // *   *    (e3    d3)
-  // * * *    (e4 c2 d4)
+  // *   *    (e2    d2)
+  // *   *    (e1    d1)
+  // * * *    (e0 c0 3.3V)
 
   digitalWrite(led_e0, HIGH);
   digitalWrite(led_e1, HIGH);
@@ -96,15 +97,14 @@ void mostrar0() {
   digitalWrite(led_e3, HIGH);
   digitalWrite(led_e4, HIGH);
 
-  digitalWrite(led_d0, HIGH);
-  digitalWrite(led_d1, HIGH);
-  digitalWrite(led_d2, HIGH);
   digitalWrite(led_d3, HIGH);
-  digitalWrite(led_d4, HIGH);
+  digitalWrite(led_d2, HIGH);
+  digitalWrite(led_d1, HIGH);
 
   digitalWrite(led_c0, HIGH);
   digitalWrite(led_c2, HIGH);
 }
+
 ```
 
 ---
