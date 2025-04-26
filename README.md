@@ -123,5 +123,10 @@ void mostrar0() {
 
 ![Imagem do WhatsApp de 2025-03-29 à(s) 14 07 07_c0ff6b2a](https://github.com/user-attachments/assets/1e446c50-c00e-4ecd-9171-1ddfa7ca637c)
 ![as](https://github.com/user-attachments/assets/49a47272-847d-423a-9995-122b5f19f1d9)
-
 <sub>*Estrutura da Placa.*</sub>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1c79e01e-d55f-45c6-a78a-07cdabaf2978" alt="Imagem Principal" width="1200"/>
+</p>
+<sub>Demonstração</sub>
+
